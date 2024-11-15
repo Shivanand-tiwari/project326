@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Search Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1d1b31;
+            color: #fff;
+        }
+
+        .header {
+            text-align: left;
+            padding: 20px;
+            background-color: #1c1b2f;
+        }
+
+        .header h1 {
+            color: #ff4dac;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #292745;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .search-section {
+            background-image: image("https://hianime.to/images/anw-min.webp?v=0.1");
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .search-section input {
+            padding: 15px;
+            width: 60%;
+            border: none;
+            border-radius: 30px;
+            margin-right: 10px;
+        }
+
+        .search-section button {
+            padding: 15px 30px;
+            background-color: #ff4dac;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .top-search {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .top-search span {
+            color: #ff4dac;
+        }
+
+        .anime-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .anime-images img {
+            width: 250px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #ff4dac;
+        }
+
+        @media (max-width: 768px) {
+            .search-section input {
+                width: 80%;
+            }
+
+            .anime-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .anime-images img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul class="nav header_menu-list">
+         <li class="nav-item">               
+         <a href="/home" title="Home">Home</a>                
+         </li>                
+         <li class="nav-item">               
+         <a href="/movie" title="Movies">Movies</a>                
+         </li>
+         <li class="nav-item">
+         <a href="/tv" title="TV Series">TV Series</a>
+         </li>
+                <li class="nav-item">         
+                <a href="/most-popular" title="Most Popular">Most Popular</a>               
+                </li>
+                <li class="nav-item">
+                <a href="/top-airing" title="Top Airing">Top Airing</a>
+                </li>
+                </ul>
+    </div>
+    <div id="xsearch" class="home-search">
+        <div class="search-content">
+        <form action="/search" autocomplete="off" id="search-form">
+        <div class="search-submit">
+        <div class="search-icon btn-search">
+        <i class="fa fa-search">
+        ::before
+        </i>
+        </div>
+        </div>
+        <input type="text" class="form-control search-input" 
+        name="keyword" placeholder="Search anime..required">
+    
+
+    <div class="anime-images">
+        <!-- These are placeholders for the anime images -->
+        <img src="anime1.jpg" alt="Anime 1">
+        <img src="anime2.jpg" alt="Anime 2">
+        <img src="anime3.jpg" alt="Anime 3">
+    </div>
+
+    <div class="footer">
+        <div class="social-links">
+            <a href="#">X</a>
+            <a href="#">Facebook</a>
+            <a href="#">Reddit</a>
+            <a href="#">Share</a>
+        </div>
+    </div>
+    <img src="https://hianime.to/images/anw-min.webp?v=0.1" alt="">
+</body>
+</html>
